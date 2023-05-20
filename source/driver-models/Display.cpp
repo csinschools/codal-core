@@ -29,6 +29,8 @@ DEALINGS IN THE SOFTWARE.
 #include "Display.h"
 #include "ErrorNo.h"
 
+#include "../../inc/core/CodalDmesg.h"
+
 using namespace codal;
 
 /**
@@ -122,7 +124,6 @@ Image Display::screenShot()
 {
     return image.crop(0,0, width, height);
 }
-
 
 /**
   * Destructor.
